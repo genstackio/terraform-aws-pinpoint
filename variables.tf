@@ -12,8 +12,8 @@ variable "email" {
 
 variable "sms" {
   type = object({
-    sender     = string
-    short_code = string
+    sender     = optional(string)
+    short_code = optional(string)
   })
   default = null
 }
