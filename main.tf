@@ -78,7 +78,7 @@ resource "aws_iam_role" "app" {
 
 module "policy" {
   source     = "genstackio/policy/aws"
-  version    = "0.1.0"
+  version    = "0.2.0"
   role_name  = aws_iam_role.app.id
   statements = [
     {
